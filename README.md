@@ -15,7 +15,7 @@ debug e testes.
 ## Programa Hello World
 
 O tradicional programa para imprimir uma mensagem de "Hello World !" está disponível na pasta
-__helloWorld__.
+[helloWorld](https://github.com/aldebap/Masterclass_Golang/tree/main/helloWorld).
 Para executar esse programa diretamente a partir da linha de comando, utilizar o seguinte:
 
 ```sh
@@ -27,29 +27,29 @@ go run main.go
 A pasta __sintaxe__ contém os programas utilizados para demonstrar os detalhes da sintaxe de GoLang.
 Dentro dessa pasta, existe uma sub-pasta para cada aspecto da sintaxe de GoLang tratada no cusso:
 
-- comentarios
-- constantes
-- variaveis
-- arrays
-- slices
-- maps
-- ponteiros
-- condicoes
-- lacos gerais
-- lacos sobre arrays
-- lacos sobre maps
-- funcoes
-- parametros de funcoes
-- retorno de funcoes
+- [comentarios](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/comentarios)
+- [constantes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/constantes)
+- [variaveis](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/variaveis)
+- [arrays](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/arrays)
+- [slices](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/slices)
+- [maps](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/maps)
+- [ponteiros](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/ponteiros)
+- [condicoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/condicoes)
+- [lacos gerais](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/lacos%20gerais)
+- [lacos sobre arrays](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/lacos%20sobre%20arrays)
+- [lacos sobre maps](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/lacos%20sobre%20maps)
+- [funcoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/funcoes)
+- [parametros de funcoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/parametros%20de%20funcoes)
+- [retorno de funcoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/retorno%20de%20funcoes)
 - TODO
-- tratamento de erros
-- go functions
+- [tratamento de erros](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/tratamento%20erros)
+- [go functions](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/go%20functions)
 - TODO
 
 ## Programa Hello API
 
 Hello API é uma versão REstFul API do programa para imprimir uma mensagem de "Hello World !" e está
-disponível na pasta __helloAPI__.
+disponível na pasta [helloAPI](https://github.com/aldebap/Masterclass_Golang/tree/main/helloAPI).
 Para executar esse programa diretamente a partir da linha de comando, utilizar o seguinte:
 
 ```sh
@@ -58,5 +58,6 @@ go run main.go
 
 Como um API é um servidor web, ele escuta requisições na porta 8080, e para ser encerrado é preciso
 utilizar o sinal CTRL + C para interromper o servidor.
-Na pasta __test__ existe uma coleção para o [Postman](https://www.postman.com/) que permite testar o
-Hello API utilizando uma requisição na pasta __Hello API__ da coleção.
+Na pasta [test](https://github.com/aldebap/Masterclass_Golang/tree/main/test) existe uma coleção
+para o [Postman](https://www.postman.com/) que permite testar o Hello API utilizando uma requisição
+na pasta __Hello API__ da coleção.
