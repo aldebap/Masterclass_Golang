@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "18152816-d305-4417-8d0a-26a095eefb33",
+		"name": "Masterclass Golang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2006649",
+		"_collection_link": "https://getnetdigital.postman.co/workspace/Curso-de-Postman~98ff1d0e-fffe-450f-9bf2-78f601445463/collection/2006649-18152816-d305-4417-8d0a-26a095eefb33?action=share&source=collection_link&creator=2006649"
+	},
+	"item": [
+		{
+			"name": "Hello API",
+			"item": [
+				{
+					"name": "hello",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
