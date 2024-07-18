@@ -6,6 +6,7 @@ import (
 )
 
 func HelloAPI(httpResponse http.ResponseWriter, httpRequest *http.Request) {
+
 	var message string = "Hello API !"
 
 	httpResponse.Write([]byte("{ \"message\": \"" + message + "\" }"))

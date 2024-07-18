@@ -41,9 +41,10 @@ Dentro dessa pasta, existe uma sub-pasta para cada aspecto da sintaxe de GoLang 
 - [funcoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/funcoes)
 - [parametros de funcoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/parametros%20de%20funcoes)
 - [retorno de funcoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/retorno%20de%20funcoes)
-- TODO
+- [valor de funcoes](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/valor%20de%20funcoes)
 - [tratamento de erros](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/tratamento%20erros)
 - [go functions](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/go%20functions)
+- [estruturas](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/estruturas)
 - TODO
 
 ## Programa Hello API
@@ -61,3 +62,5 @@ utilizar o sinal CTRL + C para interromper o servidor.
 Na pasta [test](https://github.com/aldebap/Masterclass_Golang/tree/main/test) existe uma coleção
 para o [Postman](https://www.postman.com/) que permite testar o Hello API utilizando uma requisição
 na pasta __Hello API__ da coleção.
+
+## Rest API
