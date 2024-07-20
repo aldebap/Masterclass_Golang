@@ -3,21 +3,18 @@
 #	build the application
 FROM golang:1.17-alpine AS build
 
-WORKDIR /personaLib
+WORKDIR /RestAPI
 
-COPY main.go app.go go.mod go.sum ./
-COPY controller/author.go controller/book.go controller/controller.go controller/go.mod controller/publisher.go ./controller/
-COPY model/author.go model/book.go model/id.go model/go.mod model/publisher.go ./model/
-COPY store/author.go store/book.go store/collection.go store/go.mod store/publisher.go ./store/
+COPY main.go servidorAPI.go produto.go repositorio.go go.mod go.sum ./
 
-RUN CGO_ENABLED=0 go build -o ./bin/server app.go main.go
+RUN CGO_ENABLED=0 go build -o ./bin/servidorAPI main.go servidorAPI.go produto.go repositorio.go
 
 #	create application image
 FROM alpine:latest
 
-WORKDIR /personaLib
+WORKDIR /RestAPI
 
-COPY --from=build /personaLib/bin/server ./bin/
+COPY --from=build /RestAPI/bin/servidorAPI ./bin/
 
 EXPOSE 8080
-ENTRYPOINT ["/personaLib/bin/server"]
+ENTRYPOINT ["/RestAPI/bin/servidorAPI"]

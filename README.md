@@ -45,7 +45,8 @@ Dentro dessa pasta, existe uma sub-pasta para cada aspecto da sintaxe de GoLang 
 - [tratamento de erros](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/tratamento%20erros)
 - [go functions](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/go%20functions)
 - [estruturas](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/estruturas)
-- TODO
+- [metodos](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/metodos)
+- [interface](https://github.com/aldebap/Masterclass_Golang/tree/main/sintaxe/interface)
 
 ## Programa Hello API
 
@@ -64,3 +65,28 @@ para o [Postman](https://www.postman.com/) que permite testar o Hello API utiliz
 na pasta __Hello API__ da coleção.
 
 ## Rest API
+
+Essa é uma implementação de um API Restful para uma entidade produto, que utiliza os pacotes
+externos GorillaMux e o MongoDriver.
+Para que o compilador possa resolver fazer os download das dependências dos pacotes utilizados
+é necessário executar os seguintes comandos:
+
+```sh
+go mod init main
+go mod tidy
+```
+
+Com isso serão gerados dois arquivos necessários para a compilação do servidor: __go.mod__ e
+__go.sum__.
+Caso esses arquivos sejam apagados, basta executar novamente os dois comandos acima.
+
+Um script para compilar o servidor para o RestAPI, criar um container para esse servidor e iniciar
+uma instância do MongoDB e do servidor usando Docker Compose está disponível na pasta
+[cmd](https://github.com/aldebap/Masterclass_Golang/tree/main/RestAPI/cmd), e é executada com o
+seguinte comando:
+
+```sh
+cmd/packageNRun.sh
+```
+
+Para encerrar a execução de ambos os containers basta teclar CTRL + C

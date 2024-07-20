@@ -1,25 +1,25 @@
 version: "3.3"
 services:
-  personalib:
-    image: "personalib"
+  restAPI:
+    image: "impactarestapi"
     depends_on:
       - "mongo"
     ports:
       - "127.0.0.1:8080:8080/tcp"
     environment:
-      - DATABASEURL=mongodb://peronalibdb:27017/Bookshelf?retryWrites=true&w=majority
+      - DATABASEURL=mongodb://impactadb:27017/ImpactaDB?retryWrites=true&w=majority
       - SERVICEPORT=8080
 
   mongo:
     image: "mongo:latest"
-    hostname: peronalibdb
+    hostname: impactadb
     ports:
       - "127.0.0.1:27017:27017/tcp"
     expose:
       - "27017"
     #command: [ "--config", "/etc/mongo/mongod.conf" ]
     environment:
-      - MONGO_INITDB_DATABASE=Bookshelf
+      - MONGO_INITDB_DATABASE=ImpactaDB
     #volumes:
     #  - ./config/mongod.conf:/etc/mongo/mongod.conf
     #  - ./script/createDatabase.js:/docker-entrypoint-initdb.d/createDatabse.js

@@ -30,6 +30,71 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Rest API",
+			"item": [
+				{
+					"name": "Inserir Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\": \"28743\",\n    \"descricao\": \"teclado mecanico\",\n    \"preco\": 225.00\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/produtos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Produto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\": \"28743\",\n    \"descricao\": \"teclado mecanico\",\n    \"preco\": 225.00\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/produtos/28743",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produtos",
+								"28743"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

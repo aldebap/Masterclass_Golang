@@ -1,9 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////
-//	main.go  -  Feb/10/2022  -  aldebap
-//
-//	personLib entry point
-////////////////////////////////////////////////////////////////////////////////
-
 package main
 
 import (
@@ -11,25 +5,16 @@ import (
 	"log"
 )
 
-////////////////////////////////////////////////////////////////////////////////
-//	personLib entry point
-////////////////////////////////////////////////////////////////////////////////
-
 func main() {
 
-	//	splash screen
-	fmt.Printf(">>> personaLib Server\n\n")
+	var servidor ServidorAPI
 
-	//	get configuration from environment
-	config, err := GetFromEnv()
+	fmt.Printf(">>> Servidor API\n\n")
+
+	err := servidor.lerConfig()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	//	start personLib application
-	personaLibApp := App{
-		config: config,
-	}
-
-	personaLibApp.Run()
+	log.Panic(servidor.iniciar())
 }
