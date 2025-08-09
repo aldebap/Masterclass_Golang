@@ -6,7 +6,7 @@ func main() {
 	var quantidade []int = []int{10, 15, 25}
 	var sum int
 
-	for _, elem := range quantidade {
+	for i, elem := range quantidade {
 		sum += elem
 	}
 

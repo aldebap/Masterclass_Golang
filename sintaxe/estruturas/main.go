@@ -15,5 +15,5 @@ func main() {
 		preco:     275.0,
 	}
 
-	fmt.Printf("produto: %s\n", produto)
+	fmt.Printf("desc produto: %s\n", produto.descricao)
 }

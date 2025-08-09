@@ -12,4 +12,7 @@ func Imprime(n int, nome string, f func(int) int) {
 func main() {
 	Imprime(2, "n^2", Quadrado)
 	Imprime(3, "n^3", Cubo)
+	Imprime(4, "n^4", func(n int) int {
+		return n * n * n * n
+	})
 }

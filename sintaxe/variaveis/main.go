@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var quantidade int = 10
-	preco := 25
+	var quantidade uint16 = 10
+	preco := (uint16)(25)
 
-	fmt.Printf("valor total: %d\n", quantidade*preco)
+	quantidade = quantidade + 5
+
+	fmt.Printf("valor total: %0d\n", quantidade*preco)
 }

@@ -22,7 +22,7 @@ func Fatorial(n int) (int, error) {
 
 func main() {
 
-	fatorial, err := Fatorial(5)
+	fatorial, err := Fatorial(-5)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "[erro] %s\n", err.Error())
 	}

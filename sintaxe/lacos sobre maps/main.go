@@ -6,6 +6,7 @@ func main() {
 	var idade map[string]int = map[string]int{
 		"Joao":  20,
 		"Maria": 18,
+		"Pedro": 25,
 	}
 
 	for nome, idade := range idade {
